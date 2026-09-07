@@ -510,24 +510,25 @@ body.editing .rz { display: block }
 
 
 
+
 /* -------------------------------------------------------- cursors
-   Hand-painted set from the portfolio site: same 48x48 PNGs, same MEASURED
-   hotspots, so the demo the case study embeds reads in the same language as
-   the rest of the site. */
-:root { cursor: url("assets/cursor-arrow.png") 18 6, auto; }
+   Hand-painted set from the portfolio site: same 48x48 PNGs, same measured
+   hotspots. The -v2 suffix is a cache-bust -- browsers cache cursor bitmaps
+   on the path alone, so a fixed icon needs a fresh filename to be picked up. */
+:root { cursor: url("assets/cursor-arrow-v2.png") 18 6, auto; }
 
 a, button, summary,
 [role="button"], [role="menuitem"], [role="tab"],
 label[for], input[type="checkbox"], input[type="radio"], select {
-  cursor: url("assets/cursor-point.png") 18 2, pointer;
+  cursor: url("assets/cursor-point-v2.png") 18 2, pointer;
 }
 
 [draggable="true"], .grip {
-  cursor: url("assets/cursor-move.png") 23 23, grab;
+  cursor: url("assets/cursor-move-v2.png") 23 23, grab;
 }
 [draggable="true"]:active, .grip:active {
-  cursor: url("assets/cursor-move.png") 23 23, grabbing;
+  cursor: url("assets/cursor-move-v2.png") 23 23, grabbing;
 }
-.rz.e { cursor: url("assets/cursor-resize.png") 24 23, ew-resize; }
-.rz.s { cursor: url("assets/cursor-resize.png") 24 23, ns-resize; }
-.rz.se { cursor: url("assets/cursor-resize.png") 24 23, nwse-resize; }
+.rz.e { cursor: url("assets/cursor-resize-v2.png") 24 23, ew-resize; }
+.rz.s { cursor: url("assets/cursor-resize-v2.png") 24 23, ns-resize; }
+.rz.se { cursor: url("assets/cursor-resize-v2.png") 24 23, nwse-resize; }
