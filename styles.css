@@ -508,27 +508,26 @@ body.editing .rz { display: block }
 .tour-list li.is-on { color: var(--navy); font-weight: 700 }
 
 
+
 /* -------------------------------------------------------- cursors
-   Hand-painted set from the portfolio site: same PNGs, same hotspots. Shipped
-   with the demo so the recording that gets embedded in the case study shows
-   the cursor moving between the drag handles and the info icon in the same
+   Hand-painted set from the portfolio site: same PNGs, same 48-canvas
+   hotspots, so the recording of this demo embeds into the case study with
+   the cursor moving between drag handles and the info icon in the same
    language as the rest of the site. */
-:root { cursor: url("assets/cursor-arrow.png") 0 0, auto; }
+:root { cursor: url("assets/cursor-arrow.png") 2 2, auto; }
 
 a, button, summary,
 [role="button"], [role="menuitem"], [role="tab"],
 label[for], input[type="checkbox"], input[type="radio"], select {
-  cursor: url("assets/cursor-point.png") 16 2, pointer;
+  cursor: url("assets/cursor-point.png") 24 3, pointer;
 }
 
 [draggable="true"], .grip {
-  cursor: url("assets/cursor-move.png") 16 16, grab;
+  cursor: url("assets/cursor-move.png") 24 24, grab;
 }
 [draggable="true"]:active, .grip:active {
-  cursor: url("assets/cursor-move.png") 16 16, grabbing;
+  cursor: url("assets/cursor-move.png") 24 24, grabbing;
 }
-.rz, .rz.e, .rz.s, .rz.se {
-  cursor: url("assets/cursor-resize.png") 16 16, nwse-resize;
-}
-.rz.e { cursor: url("assets/cursor-resize.png") 16 16, ew-resize; }
-.rz.s { cursor: url("assets/cursor-resize.png") 16 16, ns-resize; }
+.rz.e { cursor: url("assets/cursor-resize.png") 24 24, ew-resize; }
+.rz.s { cursor: url("assets/cursor-resize.png") 24 24, ns-resize; }
+.rz.se { cursor: url("assets/cursor-resize.png") 24 24, nwse-resize; }
